@@ -38,7 +38,7 @@ git clone https://github.com/simonkeng/dotfiles.git
 
 ## vim
 
-I really like [Oh My Vim](https://github.com/liangxianzhe/oh-my-vim), this is a wonderful modern environment and I use it with two small tweaks, one for highlighting, the other to change the default line numbering. There are many community built configs out there for shells and editors, for vim, this one is my favorite so far. For shells (more below) I'm using oh my fish with bob the fish colorscheme.
+I really like [oh my vim](https://github.com/liangxianzhe/oh-my-vim), this is a great modern environment and I use it with two small tweaks, one for highlighting, the other to change the default line numbering. There are many community built configs out there for shells and editors, for vim, this one is my favorite so far. For shells (more below) I'm using oh my fish with bob the fish colorscheme.
 
 1. Install `curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/install.sh | sh` (you might need to run the [prep script](https://github.com/liangxianzhe/oh-my-vim/blob/master/tools/prepare_mac.sh) first, the command is shown on Oh My Vim's installation instructions)
 
