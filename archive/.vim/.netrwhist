@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/simonkeng/Projects/simonkeng.github.io'
+let g:netrw_dirhist_2='/Users/simonkeng/play/server_testing'
+let g:netrw_dirhist_3='/Users/simonkeng/Projects/simonkeng.github.io'
+let g:netrw_dirhist_4='/Users/simonkeng/playground'
