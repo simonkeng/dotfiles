@@ -229,7 +229,7 @@ shift + cmd - r : brew services restart chunkwm
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 # disable/enable focus-follow-mouse
-cmd + ctrl + alt + shift - m : chunkc core::load ffm.so
-cmd + ctrl + alt - m : chunkc core::unload ffm.so
+cmd + ctrl + alt + shift - x : chunkc core::load ffm.so
+cmd + ctrl + alt - x : chunkc core::unload ffm.so
 
 
