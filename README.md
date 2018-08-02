@@ -35,6 +35,21 @@ git clone https://github.com/simonkeng/dotfiles.git
 
 6. Restart machine to start window manager & hotkey daemon
 
+**Note** if at any point things get weird:
+
+```bash
+brew services restart chunkwm
+```
+
+Additionally, if you want to completely disable chunkwm: 
+
+```bash
+brew services stop chunkwm
+```
+Usually I'll just float a window with `alt + t` if I want to pull it out of
+chunkwm's control, but sometimes its nice to completely turn it off, especially
+if you are trying to get used to it on your work laptop. 
+
 
 ## vim
 
