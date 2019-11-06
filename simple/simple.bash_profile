@@ -2,8 +2,8 @@
 # machines (that you don't plan to use for long).
 # Usage:
 # Clone or copy this file to your $HOME directory 
-# and rename it ".bashrc", then run:
-# source .bashrc
+# and rename it ".bash_profile", then run:
+# source .bash_profile
 
 export TERM="xterm-color"
 
