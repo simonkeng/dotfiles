@@ -119,5 +119,5 @@ if has('gui_running')
 endif
 set background=dark
 
-" If Dracula is present: 
-colorscheme dracula
+" Dracula
+" colorscheme dracula
