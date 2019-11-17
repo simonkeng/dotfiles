@@ -1,6 +1,6 @@
 # My Dot Files
 
-Below are some fancy things I like to have on my local machine, but if I'm using a remote VM for short-term work, then I use these [minimalist dotfiles](https://github.com/simonkeng/dotfiles/tree/master/defaultist) instead. 
+Below are some fancy things I like to have on my local machine, but if I'm using a remote VM for short-term work, then I use these [minimalist dotfiles](https://github.com/simonkeng/dotfiles/tree/defaultist) instead. 
 
 ## chunkwm & skhd
 
