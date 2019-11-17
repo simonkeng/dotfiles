@@ -1,10 +1,6 @@
 # My Dot Files
 
-With some instructions too.
-
-<img src="rig07062018.png">
-
-Below are some fancy things I like to have on my local machine, but if I'm using a remote VM for short-term work, then I use these [minimalist dotfiles](https://github.com/simonkeng/dotfiles/tree/master/simple) instead. 
+Below are some fancy things I like to have on my local machine, but if I'm using a remote VM for short-term work, then I use these [minimalist dotfiles](https://github.com/simonkeng/dotfiles/tree/master/defaultist) instead. 
 
 ## chunkwm & skhd
 
