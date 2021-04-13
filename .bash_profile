@@ -1,7 +1,7 @@
 
 export TERM="xterm-color"
 
-function parse_git_dirty {
+function parse_git {
     status=`git status 2>&1 | tee`
     dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
     untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
@@ -39,19 +39,21 @@ function parse_git_branch() {
     BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
     if [ ! "${BRANCH}" == "" ]
     then
-        STAT=`parse_git_dirty`
-        echo "{${BRANCH}${STAT}}"
+        STAT=`parse_git`
+        echo "[ ${BRANCH}${STAT} ]"
     else
         echo ""
     fi
 }
 
-byel='\[\033[01;33m\]' # Bold Yellow
-txtred='\[\e[0;31m\]' # Text Red
-txtgrn='\[\e[0;32m\]' # Text Green
-txtblu='\[\e[0;34m\]' # Text Blue
-bldblu='\[\e[1;34m\]' # Bold Blue
-txtrst='\[\e[0m\]'    # Text Reset
-nln='\n'
+green='\[\e[0;32m\]'
+red='\[\e[0;31m\]'
+blue='\[\e[0;34m\]'
+cyan='\[\e[0;36m\]'
+bold_blue='\[\e[1;34m\]'
+bold_cyan='\[\e[1;36m\]'
+bold_magenta='\[\e[1;35m\]'
+reset_color='\[\e[0m\]'
+new_line='\n'
 
-PS1=${bldblu}'[$(hostname)] '${txtred}\`parse_git_branch\`'\[\e[0m\] '${txtgrn}'\w'${nln}${txtgrn}'$ '${txtrst}
+PS1=${blue_blue}'Spaceship'${blue}' in'${green}'\h'${blue}' as '${red}'\u '${bold_magenta}\`parse_git_branch\`${reset_color}' '${cyan}'\w'${new_line}${green}'$ '${reset_color}
