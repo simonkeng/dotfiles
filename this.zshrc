@@ -157,40 +157,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias bfg="java -jar /usr/local/bin/bfg-1.13.0.jar"
 
-function set-build() {
-    [[ -n "$1" ]] || echo "set-build requires build name argument"
-    export SCHRODINGER_SRC=/Users/$USER/builds/$1/source
-    export SCHRODINGER=/Users/$USER/builds/$1/build
-    export SCHRODINGER_LIB=/Users/$USER/builds/software/lib
-}
-
-
-# added by Miniconda3 4.7.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/opt/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
 # ZSH syntax highlighting
 source /Users/keng/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/keng/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/keng/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/keng/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/keng/google-cloud-sdk/completion.zsh.inc'; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
